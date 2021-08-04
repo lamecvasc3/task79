@@ -15,5 +15,8 @@ export const useStyles = makeStyles({
         height: "50px",
         width: "50px",
         marginRight: "13px",
+    },
+    list: {
+        height: "74px",
     }
 });

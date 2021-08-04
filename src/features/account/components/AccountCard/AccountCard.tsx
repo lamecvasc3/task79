@@ -1,5 +1,12 @@
-import { List, ListItem, ListItemAvatar, ListItemText, ListItemSecondaryAction, IconButton } from "@material-ui/core";
 import React from 'react'
+import { 
+    List, 
+    ListItem, 
+    ListItemAvatar, 
+    ListItemText, 
+    ListItemSecondaryAction, 
+    IconButton } 
+from "@material-ui/core";
 import { useStyles } from "./AccountCard.style"
 
 interface AccountCardProps {
@@ -7,7 +14,8 @@ interface AccountCardProps {
     info: string,
     icon: string,
     iconRight: string, 
-    bank: string
+    bank: string,
+    height: string,
 }
 
 export const AccountCard : React.FC<AccountCardProps> = ({
@@ -15,12 +23,13 @@ export const AccountCard : React.FC<AccountCardProps> = ({
     info, 
     icon, 
     iconRight, 
-    bank
+    bank,
+    height,
 }) => {
     const style = useStyles();
     return (
-        <List>
-            <ListItem button >
+        <List className={style.list}>
+            <ListItem button>
                 <ListItemAvatar>
                     <img src={icon} alt="Icone avatar" className={style.avatarIcon}/>
                 </ListItemAvatar>
@@ -36,7 +45,7 @@ export const AccountCard : React.FC<AccountCardProps> = ({
                 }/>
                 <ListItemSecondaryAction>
                     <IconButton edge="end" style={{ marginTop: "-12px"}}>
-                        <img src={iconRight} alt="Icone"></img>
+                        <img src={iconRight} alt="Icone" height={height}></img>
                     </IconButton>
                 </ListItemSecondaryAction>
             </ListItem>

@@ -1,7 +1,7 @@
 import { Box, CssBaseline, MuiThemeProvider } from "@material-ui/core";
-import { theme } from '../../_config/theme';
+import { theme } from '_config/theme';
 import { useStyle } from "./App.style";
-import { AccountSettings } from '../../features/account/pages/AccountSettings'
+import { AccountSettings } from 'features/account/pages/AccountSettings'
 
 export const App: React.FC = () => {
     const style = useStyle();

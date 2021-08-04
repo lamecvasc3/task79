@@ -12,6 +12,6 @@ export const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: "-28px",
+    marginTop: "-29px",
 }
 });

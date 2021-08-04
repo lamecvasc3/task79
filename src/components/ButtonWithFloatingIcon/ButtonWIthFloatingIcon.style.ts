@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core";
-import { colors, theme } from "../../_config/theme"
+import { colors, theme } from "_config/theme"
 interface ButtonWithFloatingIconStylesProps {
   size?: "small"| "medium" | "large";
 }

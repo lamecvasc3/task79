@@ -1,8 +1,9 @@
 import { makeStyles } from "@material-ui/core";
-import { textColors } from "../../_config/theme"
+import { textColors } from "_config/theme"
 
 export const useStyles = makeStyles({
   title: {
+    marginTop: "10px",
     fontWeight: 700,
     fontSize: 20,
     marginBottom: "1px",

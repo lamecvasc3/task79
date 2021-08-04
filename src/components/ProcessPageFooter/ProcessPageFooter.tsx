@@ -3,7 +3,7 @@ import React from "react";
 import { Box } from "@material-ui/core";
 import { KeyboardArrowLeft } from "@material-ui/icons";
 import { Button } from "../Button"
-import { returnLabel } from "../../constants/buttons/labels"
+import { returnLabel } from "constants/buttons/labels"
 import { useStyles } from "./ProcessPageFooter.style";
 
 interface ProcessPageFooterProps {

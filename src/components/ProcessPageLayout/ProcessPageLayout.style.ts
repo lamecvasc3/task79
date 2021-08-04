@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core";
-import { theme } from "../../_config/theme"
+import { theme } from "_config/theme"
 
 const padding = 16;
 
@@ -18,6 +18,7 @@ export const useStyles = makeStyles<typeof theme, StylesProps>({
   },
   header: {
     padding: padding,
+    height: "240px",
   },
   main: {
     flex: 1,
