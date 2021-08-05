@@ -1,19 +1,6 @@
-import { createStyles, List, ListItem, ListItemText, makeStyles, Theme } from "@material-ui/core";
 import React from "react";
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      marginTop: "20px",
-    },
-    listSection: {
-      textAlign: "center",
-      fontSize: "12px",
-      lineHeight: "14.06px",
-      padding: "2vh 0",
-    },
-  }),
-);
+import { List, ListItem, ListItemText} from "@material-ui/core";
+import { useStyles } from "features/account/components/ListOptions/ListOptions.style";
 
 export const ListOptions: React.FC = () => {
     const styles = useStyles()

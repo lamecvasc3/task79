@@ -26,6 +26,7 @@ export const useStyles = makeStyles({
     "& .MuiButton-label": {
       textTransform: "none",
       textAlign: "center",
+      fontWeight: "bold"
     },
     "&.MuiButton-sizeSmall": {
       minWidth: "70px",

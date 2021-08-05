@@ -16,11 +16,7 @@ export const useStyles = makeStyles<Theme, ButtonStylesProps, "button">({
 
       return palette === "primary" ? colors.primary.main : "white";
     },
-    color: ({ palette, variant }) => {
-      if (variant === "outlined") return textColors.primary;
-
-      return palette === "primary" ? "white" : textColors.primary;
-    },
+    color: "#363636",
     borderRadius: 4,
 
     "&.MuiButton-contained": {

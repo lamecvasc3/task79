@@ -5,7 +5,8 @@ import {
     ListItemAvatar, 
     ListItemText, 
     ListItemSecondaryAction, 
-    IconButton } 
+    IconButton, 
+    Typography} 
 from "@material-ui/core";
 import { useStyles } from "./AccountCard.style"
 
@@ -35,13 +36,13 @@ export const AccountCard : React.FC<AccountCardProps> = ({
                 </ListItemAvatar>
                 <ListItemText 
                 primary={ 
-                    <div className={style.primary}>{name}</div>
+                    <Typography className={style.primary}>{name}</Typography>
                 }
                 secondary={
-                    <div className={style.secondary}>
+                    <Typography className={style.secondary}>
                         <div>{info}</div>
                         <div>{bank}</div>
-                    </div>        
+                    </Typography>        
                 }/>
                 <ListItemSecondaryAction>
                     <IconButton edge="end" style={{ marginTop: "-12px"}}>
